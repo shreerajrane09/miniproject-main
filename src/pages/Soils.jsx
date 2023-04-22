@@ -1,11 +1,12 @@
 import Data from './data1.json';
-import DiseaseCard from '../components/SoilCard';
+import SoilCard from '../components/SoilCard';
 import {useSpring, animated, useTrail} from '@react-spring/web';
 import {useEffect} from 'react';
-import './Resources.css';
+import './Soils.css';
 
-const Diseases = () => {
-  const pages = [0, 1, 2];
+
+const Soils = () => {
+  const pages = [0, 1, 2 ,3 ,4 ,5];
   const config = {mass: 20, tension: 2000, friction: 500};
 
   useEffect(() => {
@@ -40,9 +41,9 @@ const Diseases = () => {
             <div className="flex flex-wrap gap-7 mt-[2rem] items-center justify-center">
               {pages.map((page, index) => (
                 <animated.div style={trail[index]}>
-                  <DiseaseCard
+                  <SoilCard
                     page={page}
-                    photo={`/sample-paddies/${page}.jpg`}
+                    photo={`/sample-soil/${page}.jpg`}
                     name={Data[page].name}
                     description={`${Data[page].cause
                       .slice(0, 50)
@@ -63,4 +64,4 @@ const Diseases = () => {
   );
 };
 
-export default Diseases;
+export default Soils;

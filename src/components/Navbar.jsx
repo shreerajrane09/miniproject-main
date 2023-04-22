@@ -42,7 +42,7 @@ const Navbar = () => {
         <Link to="/Diseases">About Diseases (Crop and Fruit)</Link>
       </button>
       <button className="transition ease-in-out duration-100 hover:bg-[#b8e4bb] bg-[#9ae19f] px-4 py-2 rounded-md">
-        <Link to="/resources">About Soil Analysis</Link>
+        <Link to="/Soils">About Soil Analysis</Link>
       </button>
       </div>
 

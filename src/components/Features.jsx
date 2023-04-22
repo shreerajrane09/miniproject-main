@@ -20,7 +20,7 @@ const Features = () => {
         style={fadeIn}
       >
         <div className="transition ease-in-out duration-200 hover:shadow-xl shadow-md flex flex-col justify-center items-center w-[100rem] bg-white px-[2rem] py-[4rem] mx-[2rem] rounded-xl text-[#2c302e]">
-          <div className="font-bold font-serif text-[48px]">Features:</div>
+          <div className="font-bold font-serif text-[48px]">Features</div>
           <div className="flex flex-col lg:flex-row items-end justify-center mt-[2rem] space-x-6">
             <div className="text-[16px] flex flex-col justify-center items-center text-center w-[100%]">
               <p className="lg:mb-[1.5rem]">
